@@ -17,7 +17,7 @@ $navigation = (!$canEdit) ? [] : [
 <?=
 \humhub\modules\custom_pages\widgets\SnippetContent::widget([
     'model' => $model,
-    'content' => '<iframe id="' . $iframeId . '" style="border:0px;width:100%;" src="' . \yii\helpers\Html::encode($model->getPageContent()) . '"></iframe>',
+    'content' => '<iframe id="' . $iframeId . '" style="border:0px;width:100%;min-height:200px;" src="' . \yii\helpers\Html::encode($model->getPageContent()) . '" allowfullscreen></iframe>',
     'navigation' => $navigation
 ]);
 ?>
